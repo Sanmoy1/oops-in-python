@@ -1,0 +1,25 @@
+<!DOCTYPE BOOK_CATALOG [
+    <!ELEMENT BOOK_CATALOG (BOOK+, DEPARTMENT?, INSTITUTE)>
+    
+    <!ELEMENT BOOK (TITLE, AUTHOR+, PRICE, YEAR?)>
+    <!ATTLIST BOOK AccNo CDATA #REQUIRED>
+    <!ATTLIST BOOK genre (Science Fiction | Detective | Fantasy | Classic | Others) #REQUIRED>
+
+    <!ELEMENT TITLE (#PCDATA)>
+
+    <!ELEMENT AUTHOR (NAME, COUNTRY)>
+    <!ELEMENT NAME (#PCDATA)>
+    <!ELEMENT COUNTRY (#PCDATA)>
+
+    <!ELEMENT PRICE (#PCDATA)>
+    <!ATTLIST PRICE currency CDATA #REQUIRED>
+
+    <!ELEMENT YEAR (#PCDATA)>
+
+    <!ELEMENT DEPARTMENT (#PCDATA)>
+
+    <!ELEMENT INSTITUTE (#PCDATA)>
+
+    <!ENTITY Univ_Name "University of XYZ">
+    <!ENTITY email "contact@universityxyz.edu">
+]>

@@ -1,0 +1,29 @@
+version="1.0" encoding="utf-8"?>
+<ORDERS>
+<ORDER orderid="2234">
+<CUSTOMER Category="Prime">
+<NAME>ABC</NAME>
+<SHIPADDR>xxx, Kochi <COUNTRY>India</COUNTRY></SHIPADDR>
+<CUSTOMER>
+<ORDERTOTAL> 11942 </ORDERTOTAL>
+<ITEM No="1">
+<DESCRIPTION> DESC1 </DESCRIPTION>
+<QTTY> 4</QTTY>
+<UNITPRICE currency="Rs"> 460</UNITPRICE>
+<ITEMTOTAL>1880</ITEMTOTAL>
+</ITEM>
+<ITEM No "2">
+</ITEM>
+</ORDER>
+<ORDER orderid="2235">
+</ORDER>
+<footer>&sellername; &email</footer>
+</ORDERS>
+
+Note:
+i) There can be one or more order elements in the XML file
+
+Every order has an identifier (orderid), which is a mandatory attribute 
+Each order can have zero to many item elements
+
+The entities mentioned in the footer should also be defined as part of the DTD
